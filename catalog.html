@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Нёрдс</title>
+</head>
+
+<body>
+
+  <header class="page-header">
+    <nav class="page-header__nav">
+      <a href="index.html">
+        <img class="page-header__logo" src="img/nerds-logo.svg" alt="Веб-студия Nerds">
+      </a>
+      <ul class="menu">
+        <li class="menu__item"><a href="">Студия</a></li>
+        <li class="menu__item"><a href="">Клиенты</a></li>
+        <li class="menu__item"><a href="">Магазин</a></li>
+        <li class="menu__item"><a href="">Контакты</a></li>
+      </ul>
+
+      <a class="page-header__cart" href="#">Корзина</a>
+
+    </nav>
+  </header>
+
+  <main class="page-content">
+    <h1>Магазин готовых шаблонов</h1>
+    <section class="filter">
+      <h2 class="visually-hidden">Фильтрация товаров</h2>
+
+      <form class="form" action="#" method="get">
+        <fieldset class="form__fieldset">
+          <legend class="form__title">Стоимость:</legend>
+          <input class="form__range-slider" type="range" name="price-range" min="0" max="100000" step="1">
+          <label>
+            <span class="form__item-title">От</span> <input class="form__number-field" type="number" name="lower-price"
+              id="lower-price-field" min="0" max="100000">
+          </label>
+          <label>
+            <span class="form__item-title">До</span> <input class="form__number-field" type="number" name="higher-price"
+              id="higher-price-field" min="0" max="100000">
+          </label>
+        </fieldset>
+
+        <fieldset class="form__fieldset">
+          <legend class="form__title">Сетка:</legend>
+          <ul class="form__list">
+            <li class="form__item">
+              <label>
+                <input class="form__field" type="radio" name="grid-type" value="adaptive">
+                <span class="form__item-title">Адаптивная</span>
+              </label>
+            </li>
+            <li class="form__item">
+              <label>
+                <input class="form__field" type="radio" name="grid-type" value="fixed">
+                <span class="form__item-title">Фиксированная</span>
+              </label>
+            </li>
+            <li class="form__item">
+              <label>
+                <input class="form__field" type="radio" name="grid-type" value="rubber">
+                <span class="form__item-title">Резиновая</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="form__fieldset">
+          <legend class="form__title">Особенности:</legend>
+          <ul class="form__list">
+            <li class="form__item">
+              <label>
+                <input class="form__field" type="checkbox" name="features">
+                <span class="form__item-title">Слайдер</span>
+              </label>
+            </li>
+            <li class="form__item">
+              <label>
+                <input class="form__field" type="checkbox" name="features">
+                <span class="form__item-title">Блок преимуществ</span>
+              </label>
+            </li>
+            <li class="form__item">
+              <label>
+                <input class="form__field" type="checkbox" name="features">
+                <span class="form__item-title">Новости</span>
+              </label>
+            </li>
+            <li class="form__item">
+              <label>
+                <input class="form__field" type="checkbox" name="features">
+                <span class="form__item-title">Галерея</span>
+              </label>
+            </li>
+            <li class="form__item">
+              <label>
+                <input class="form__field" type="checkbox" name="features">
+                <span class="form__item-title">Корзина</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="form__button" type="submit">Показать</button>
+      </form>
+    </section>
+
+    <section class="sorting">
+      <h2 class="visually-hidden">Сортировка товаров</h2>
+      <form class="page-content__form" action="#" method="get">
+        <fieldset class="form__fieldset">
+          <legend class="form__title">Сортировать:</legend>
+          <ul class="form__list">
+            <li class="form__item">
+              <label>
+                <input class="form__field" type="radio" name="sorting-radio">
+                <span class="form__item-title">по цене</span>
+              </label>
+            </li>
+            <li class="form__item">
+              <label>
+                <input class="form__field" type="radio" name="sorting-radio">
+                <span class="form__item-title">по типу</span>
+              </label>
+            </li>
+            <li class="form__item">
+              <label>
+                <input class="form__field" type="radio" name="sorting-radio">
+                <span class="form__item-title">по названию</span>
+              </label>
+            </li>
+          </ul>
+          <ul class="form__list">
+            <li class="form__item">
+              <label><input class="form__field" type="radio" name="up-down">
+                <span class="form__item-title">Down</span>
+              </label>
+            </li>
+            <li class="form__item"><label><input class="form__field" type="radio" name="up-down">
+                <span class="form__item-title">Up</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+      </form>
+    </section>
+
+    <section class="products">
+      <h2 class="visually-hidden">Товары</h2>
+      <ul class="products__list">
+        <li class="products__item">
+          <img class="products__img" src="img/sedona.jpg" width="360" height="576" alt="Проект Sedona">
+          <h3 class="products__item-title">Sedona</h3>
+          <p class="products__text">Информационный сайт для туристов</p>
+          <a class="products__link" href="#">9 900 руб.</a>
+        </li>
+        <li class="products__item">
+          <img class="products__img" src="img/pink.jpg" width="360" height="576" alt="Проект Pink">
+          <h3 class="products__item-title">Pink App</h3>
+          <p class="products__text">Продуктовый лендинг приложения для iOS и Android</p>
+          <a class="products__link" href="#">9 900 руб.</a>
+        </li>
+        <li class="products__item">
+          <img class="products__img" src="img/barbershop.jpg" width="360" height="576" alt="Проект Barbershop">
+          <h3 class="products__item-title">Barbershop</h3>
+          <p class="products__text">Сайт салона красоты. Для мужчин, да.</p>
+          <a class="products__link" href="#">9 900 руб.</a>
+        </li>
+        <li class="products__item">
+          <img class="products__img" src="img/mishka.jpg" width="360" height="576" alt="Проект Mishka">
+          <h3 class="products__item-title">Mishka</h3>
+          <p class="products__text">Интернет-магазин вязаных игрушек</p>
+          <a class="products__link" href="#">9 900 руб.</a>
+        </li>
+        <li class="products__item">
+          <img class="products__img" src="img/aplus.jpg" width="360" height="576" alt="Проект A Plus">
+          <h3 class="products__item-title">A Plus</h3>
+          <p class="products__text">Лендинг курсов повышения квалификации</p>
+          <a class="products__link" href="#">9 900 руб.</a>
+        </li>
+        <li class="products__item">
+          <img class="products__img" src="img/kvast.jpg" width="360" height="576" alt="Проект Кваст">
+          <h3 class="products__item-title">Кваст</h3>
+          <p class="products__text">Промо-сайт производителя крафтового кваса</p>
+          <a class="products__link" href="#">9 900 руб.</a>
+        </li>
+      </ul>
+      <div class="pagination">
+        <a class="pagination__btn" href="#">Назад</a>
+        <ul class="pagination__list">
+          <li class="pagination__item"><a href="#" class="pagination__link">1</a></li>
+          <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
+          <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
+        </ul>
+        <a class="pagination__btn" href="#">Вперед</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <section class="main-content__contacts">
+      <h2 class="main-content__section-title">Контактная информация</h2>
+      <div class="contacts">
+        <p class="contacts__title">NЁRDS DESIGN STUDIO</p>
+        <p class="contacts__address content-text">191186, Санкт-Петербург,
+          ул. Б. Конюшенная, д. 19/8</p>
+
+        <p class="contacts__phone content-text">тел. +7 (812) 275-75-75</p>
+        <a href="#">Напишите нам</a>
+      </div>
+    </section>
+    <ul class="social-list">
+      <li class="social-list__item"><a href="social-list__link">VK</a></li>
+      <li class="social-list__item"><a href="social-list__link">Facebook</a></li>
+      <li class="social-list__item"><a href="social-list__link">Instagram</a></li>
+    </ul>
+    <p class="page-footer__slogan">Давайте дружить, это выгодно!</p>
+    <p class="page-footer__text content-text">Скидка 10% для друзей из социальных сетей.</p>
+  </footer>
+</body>
+
+</html>
