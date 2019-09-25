@@ -15,7 +15,8 @@
         <img class="page-header__logo" src="img/nerds-logo.svg" width="160" height="65" alt="Веб-студия Nerds">
       </a>
       <ul class="menu list-formatter">
-        <li class="menu__item menu__item--current"><a href="#">Студия</a></li>
+        <li class="menu__item menu__item--current" area-current="page"><a href="#"><span class="visually-hidden">Текущий
+              пункт:</span>Студия</a></li>
         <li class="menu__item"><a href="#">Клиенты</a></li>
         <li class="menu__item"><a href="catalog.html">Магазин</a></li>
         <li class="menu__item"><a href="#">Контакты</a></li>
@@ -32,7 +33,7 @@
       <h2 class="main-content__section-title visually-hidden">Ключевые особенности</h2>
       <ul class="sliders list-formatter">
         <li class="sliders__item">
-          <h3 class="sliders__title">Дизайн</h3>
+          <h3 class="sliders__title visually-hidden">Дизайн</h3>
           <p class="sliders__slogan">Долго, дорого,
             скрупулезно.</p>
           <p class="sliders_text content-text">Математически выверенный дизайн
@@ -41,7 +42,7 @@
           <img class="sliders__img" src="img/slide1.png" width="698" height="413" alt="Изображение мобильны устройств">
         </li>
         <li class="sliders__item">
-          <h3 class="sliders__title">Пропорции</h3>
+          <h3 class="sliders__title visually-hidden">Пропорции</h3>
           <p class="sliders__slogan">Любим математику
             как никто другой</p>
           <p class="sliders_text content-text">Никакого креатива, только математические формулы
@@ -50,7 +51,7 @@
           <img class="sliders__img" src="img/slide2.png" width="663" height="430" alt="Изображение компьютеров">
         </li>
         <li class="sliders__item">
-          <h3 class="sliders__title">Время работы</h3>
+          <h3 class="sliders__title visually-hidden">Время работы</h3>
           <p class="sliders__slogan">Только ночь,
             только хардкор</p>
           <p class="sliders_text content-text">Работать днем, как все? Мы против этого.
@@ -183,20 +184,23 @@
       <fieldset>
         <legend class="write-us__title">Напишите нам</legend>
         <label>
-          <span class="write-us__label">Ваше имя:</span>
-          <input class="write-us__input" type="text" name="name" placeholder="Имя Фамилия">
+          <span class="write-us__label">Ваше имя:<span class="visually-hidden">(Обязательно)</span></span>
+          <input class="write-us__input" type="text" name="name" placeholder="Имя Фамилия" aria-required="true"
+            aria-live="polite" required>
         </label>
         <label>
-          <span class="write-us__label">Ваш e-mail:</span>
-          <input class="write-us__input" type="email" name="email" placeholder="email@example.com">
+          <span class="write-us__label">Ваш e-mail:<span class="visually-hidden">(Обязательно)</span></span>
+          <input class="write-us__input" type="email" name="email" placeholder="email@example.com"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" aria-required="true" required>
         </label>
+
         <label>
-          <span class="write-us__label">Текст письма:</span>
-          <textarea class="write-us__textarea" name="message" cols="30" rows="10"
-            placeholder="В свободной форме"></textarea>
+          <span class="write-us__label">Текст письма:<span class="visually-hidden">(Обязательно)</span></span>
+          <textarea class="write-us__textarea" name="message" cols="30" rows="10" placeholder="В свободной форме"
+            aria-required="true" required></textarea>
         </label>
       </fieldset>
-      <button class="write-us__btn btn" type="button">Отправить</button>
+      <button class="write-us__btn btn" type="submit">Отправить</button>
     </form>
     <button class="close__btn" type="button" aria-label="Закрыть">X</button>
   </section>
