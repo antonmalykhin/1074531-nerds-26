@@ -10,127 +10,155 @@
 
 <body>
   <header class="page-header">
-    <nav class="page-header__nav">
-      <a>
-        <img class="page-header__logo" src="img/nerds-logo.svg" width="160" height="65" alt="Веб-студия Nerds">
-      </a>
-      <ul class="menu list-formatter">
-        <li class="menu__item menu__item--current" area-current="page"><a href="#"><span class="visually-hidden">Текущий
-              пункт:</span>Студия</a></li>
-        <li class="menu__item"><a href="#">Клиенты</a></li>
-        <li class="menu__item"><a href="catalog.html">Магазин</a></li>
-        <li class="menu__item"><a href="#">Контакты</a></li>
-      </ul>
 
-      <a class="page-header__cart" href="#">Корзина</a>
+    <nav class="page-header__nav container">
+      <div class="columns">
+        <a>
+          <img class="page-header__logo" src="img/nerds-logo.svg" width="160" height="65" alt="Веб-студия Nerds">
+        </a>
+        <ul class="menu list-formatter">
+          <li class="menu__item menu__item--current" area-current="page"><a href="#"><span
+                class="visually-hidden">Текущий
+                пункт:</span>Студия</a></li>
+          <li class="menu__item"><a href="#">Клиенты</a></li>
+          <li class="menu__item"><a href="catalog.html">Магазин</a></li>
+          <li class="menu__item"><a href="#">Контакты</a></li>
+        </ul>
 
+        <a class="page-header__cart" href="#">Корзина</a>
+      </div>
     </nav>
   </header>
 
   <main class="main-content">
+
     <h1 class="main-content__title visually-hidden">Веб-студия Nerds</h1>
+
     <section class="main-content__slider">
-      <h2 class="main-content__section-title visually-hidden">Ключевые особенности</h2>
-      <ul class="sliders list-formatter">
-        <li class="sliders__item">
-          <h3 class="sliders__title visually-hidden">Дизайн</h3>
-          <p class="sliders__slogan">Долго, дорого,
-            скрупулезно.</p>
-          <p class="sliders_text content-text">Математически выверенный дизайн
-            для вашего сайта или мобильного приложения.</p>
-          <a class="sliders__btn btn" href="#">Узнать больше</a>
-          <img class="sliders__img" src="img/slide1.png" width="698" height="413" alt="Изображение мобильны устройств">
-        </li>
-        <li class="sliders__item">
-          <h3 class="sliders__title visually-hidden">Пропорции</h3>
-          <p class="sliders__slogan">Любим математику
-            как никто другой</p>
-          <p class="sliders_text content-text">Никакого креатива, только математические формулы
-            для расчета идеальных пропорций.</p>
-          <a class="sliders__btn btn" href="#">Узнать больше</a>
-          <img class="sliders__img" src="img/slide2.png" width="663" height="430" alt="Изображение компьютеров">
-        </li>
-        <li class="sliders__item">
-          <h3 class="sliders__title visually-hidden">Время работы</h3>
-          <p class="sliders__slogan">Только ночь,
-            только хардкор</p>
-          <p class="sliders_text content-text">Работать днем, как все? Мы против этого.
-            Ближе к полуночи работа только начинается.</p>
-          <a class="sliders__btn btn" href="#">Узнать больше</a>
-          <img class="sliders__img" src="img/slide3.png" width="759" height="441" alt="Изображение мобильны устройств">
-        </li>
-      </ul>
-      <ul class="slider-nav list-formatter">
-        <li class="slider-nav__item"><a href="#">1</a></li>
-        <li class="slider-nav__item"><a href="#">2</a></li>
-        <li class="slider-nav__item"><a href="#">3</a></li>
-      </ul>
+      <div class="container">
+
+        <h2 class="main-content__section-title visually-hidden">Ключевые особенности</h2>
+        <ul class="sliders list-formatter">
+          <li class="sliders__item">
+            <div class="columns">
+              <div class="column">
+                <h3 class="sliders__title visually-hidden">Дизайн</h3>
+                <p class="sliders__slogan">Долго, дорого,
+                  скрупулезно.</p>
+                <p class="sliders_text content-text">Математически выверенный дизайн<br>
+                  для вашего сайта или мобильного приложения.</p>
+                <a class="sliders__btn btn" href="#">Узнать больше</a>
+              </div>
+              <img class="sliders__img" src="img/slide1.png" width="698" height="413"
+                alt="Изображение мобильны устройств">
+            </div>
+          </li>
+          <li class="sliders__item visually-hidden">
+            <h3 class="sliders__title visually-hidden">Пропорции</h3>
+            <div class="columns">
+              <div class="column">
+                <p class="sliders__slogan">Любим математику
+                  как никто другой</p>
+                <p class="sliders_text content-text">Никакого креатива, только математические формулы
+                  для расчета идеальных пропорций.</p>
+                <a class="sliders__btn btn" href="#">Узнать больше</a>
+              </div>
+              <img class="sliders__img" src="img/slide2.png" width="663" height="430" alt="Изображение компьютеров">
+            </div>
+          </li>
+          <li class="sliders__item visually-hidden">
+            <h3 class="sliders__title visually-hidden">Время работы</h3>
+            <div class="columns">
+              <div class="column">
+                <p class="sliders__slogan">Только ночь,
+                  только хардкор</p>
+                <p class="sliders_text content-text">Работать днем, как все? Мы против этого.
+                  Ближе к полуночи работа только начинается.</p>
+                <a class="sliders__btn btn" href="#">Узнать больше</a>
+              </div>
+              <img class="sliders__img" src="img/slide3.png" width="759" height="441"
+                alt="Изображение мобильны устройств">
+            </div>
+          </li>
+        </ul>
+        <ul class="slider-nav list-formatter">
+          <li class="slider-nav__item"><a class="slider-nav__link" href="#">1</a></li>
+          <li class="slider-nav__item"><a class="slider-nav__link" href="#">2</a></li>
+          <li class="slider-nav__item"><a class="slider-nav__link" href="#">3</a></li>
+        </ul>
+
     </section>
     <section class="main-content__advantages">
       <h2 class="main-content__section-title visually-hidden">Преимущества</h2>
-      <ul class="advantages-list list-formatter">
-        <li class="advantages-list__item">
-          <img class="advantages-list__img" src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
-          <h3 class="advantages-list__title">Веб-сайты</h3>
-          <p class="advantages-list__text content-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a class="advantages-list__btn advantages-list__btn--red btn" href="#">Заказать</a>
-        </li>
-        <li class="advantages-list__item">
-          <img class="advantages-list__img" src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
-          <h3 class="advantages-list__title">Приложения</h3>
-          <p class="advantages-list__text content-text">Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a class="advantages-list__btn advantages-list__btn--green btn" href="#">Заказать</a>
-        </li>
-        <li class="advantages-list__item">
-          <img class="advantages-list__img" src="img/illustration-3.jpg" width="300" height="146" alt="Презентации">
-          <h3 class="advantages-list__title">Презентации</h3>
-          <p class="advantages-list__text content-text">Вы даже не подозреваете,
-            насколько вы изумительны!</p>
-          <a class="advantages-list__btn advantages-list__btn--yellow btn" href="#">Заказать</a>
-        </li>
-      </ul>
+      <div class="container">
+        <ul class="advantages-list list-formatter columns">
+          <li class="advantages-list__item">
+            <img class="advantages-list__img" src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
+            <h3 class="advantages-list__title">Веб-сайты</h3>
+            <p class="advantages-list__text content-text">Мир никогда не будет прежним после того как увидит ваш сайт!
+            </p>
+            <a class="advantages-list__btn advantages-list__btn--red btn" href="#">Заказать</a>
+          </li>
+          <li class="advantages-list__item">
+            <img class="advantages-list__img" src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
+            <h3 class="advantages-list__title">Приложения</h3>
+            <p class="advantages-list__text content-text">Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a class="advantages-list__btn advantages-list__btn--green btn" href="#">Заказать</a>
+          </li>
+          <li class="advantages-list__item">
+            <img class="advantages-list__img" src="img/illustration-3.jpg" width="300" height="146" alt="Презентации">
+            <h3 class="advantages-list__title">Презентации</h3>
+            <p class="advantages-list__text content-text">Вы даже не подозреваете,
+              насколько вы изумительны!</p>
+            <a class="advantages-list__btn advantages-list__btn--yellow btn" href="#">Заказать</a>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="main-content__about-studio">
       <h2 class="main-content__section-title visually-hidden">Информация о веб-студии</h2>
-      <section class="about">
-        <h3 class="about__title visually-hidden">О нас</h3>
-        <div class="left-side">
-          <p class="about__slogan">Мы — маленькая, но гордая
-            дизайн-студия из Краснодара.</p>
-          <p class="about__text content-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет
-            превыше креатива. Работаем не покладая рук, как роботы.</p>
-          <p class="about__features-title">Выполняем заказы на разработку:</p>
-          <ul class="about__features list-formatter">
-            <li class="about__feature">Веб-сайтов любой сложности</li>
-            <li class="about__feature">Мобильных приложений для iOS и Android</li>
-            <li class="about__feature">Слайдшоу и видео для корпоративных презентаций</li>
-          </ul>
+      <div class="container">
+        <div class="columns">
+          <div class="left-side">
+            <p class="about__slogan">Мы — маленькая, но гордая
+              дизайн-студия из Краснодара.</p>
+            <p class="about__text content-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+              превыше креатива. Работаем не покладая рук, как роботы.</p>
+            <p class="about__features-title">Выполняем заказы на разработку:</p>
+            <ul class="about__features list-formatter">
+              <li class="about__feature">Веб-сайтов любой сложности</li>
+              <li class="about__feature">Мобильных приложений для iOS и Android</li>
+              <li class="about__feature">Слайдшоу и видео для корпоративных презентаций</li>
+            </ul>
+          </div>
+          <div class="right-side">
+            <img class="about__logo" src="img/nerds-illustration.jpg" width="360" height="208"
+              alt="Логотип веб-студии Nerds">
+            <p class="about__statistic-title">с 2004 года Любим точность во всем:</p>
+            <ul class="about__statistics-list list-formatter">
+              <li class="about__statistic-item">
+                <p class="about__percent">146<span>%</span></p>
+                <p class="about__text content-text">Уровень
+                  самоотдачи</p>
+              </li>
+              <li class="about__statistic-item">
+                <p class="about__percent">100<span>%</span></p>
+                <p class="about__text content-text">Соблюдение
+                  сроков</p>
+              </li>
+              <li class="about__statistic-item">
+                <p class="about__percent">50<span>%</span></p>
+                <p class="about__text content-text">Минимальная предоплата</p>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="right-side">
-          <img class="about__logo" src="img/nerds-illustration.jpg" width="360" height="208"
-            alt="Логотип веб-студии Nerds">
-          <p class="about__statistic-title">с 2004 года Любим точность во всем:</p>
-          <ul class="about__statistics-list list-formatter">
-            <li class="about__statistic-item">
-              <p class="about__percent">146<span>%</span></p>
-              <p class="about__text content-text">Уровень
-                самоотдачи</p>
-            </li>
-            <li class="about__statistic-item">
-              <p class="about__percent">100<span>%</span></p>
-              <p class="about__text content-text">Соблюдение
-                сроков</p>
-            </li>
-            <li class="about__statistic-item">
-              <p class="about__percent">50<span>%</span></p>
-              <p class="about__text content-text">Минимальная предоплата</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="partners">
-        <h3 class="partners__title">Партнеры</h3>
-        <ul class="partners__list list-formatter">
+      </div>
+    </section>
+    <section class="partners">
+      <h3 class="partners__title visually-hidden">Партнеры</h3>
+      <div class="container">
+        <ul class="partners__list list-formatter columns">
           <li class="partners_item">
             <a class="partners__link" href="#">
               <img class="partners__img" src="img/logo-1.png" width="190" height="68" alt="HTML Academy">
@@ -152,29 +180,39 @@
             </a>
           </li>
         </ul>
-      </section>
+      </div>
+    </section>
     </section>
   </main>
   <footer class="page-footer">
     <section class="page-footer__contacts">
       <h2 class="visually-hidden">Контактная информация</h2>
-      <div class="contacts">
-        <p class="contacts__title">NЁRDS DESIGN STUDIO</p>
-        <p class="contacts__address content-text">191186, Санкт-Петербург,
-          ул. Б. Конюшенная, д. 19/8</p>
-        <p class="contacts__phone content-text">тел. +7 (812) 275-75-75</p>
-        <a class="contacts__btn btn" href="#">Напишите нам</a>
+      <div class="container">
+        <div class="contacts">
+          <p class="contacts__title">NЁRDS DESIGN STUDIO</p>
+          <p class="contacts__address content-text">191186, Санкт-Петербург,<br>
+            ул. Б. Конюшенная, д. 19/8</p>
+          <p class="contacts__phone content-text">тел. +7 (812) 275-75-75</p>
+          <a class="contacts__btn btn" href="#">Напишите нам</a>
+        </div>
       </div>
     </section>
+
     <section class="page-footer__social">
       <h2 class="visually-hidden">Социальные сети</h2>
-      <ul class="social-list list-formatter">
-        <li class="social-list__item"><a href="social-list__link" aria-label="Вконтакте">VK</a></li>
-        <li class="social-list__item"><a href="social-list__link" aria-label="Facebook">Facebook</a></li>
-        <li class="social-list__item"><a href="social-list__link" aria-label="Instagram">Instagram</a></li>
-      </ul>
-      <p class="page-footer__slogan">Давайте дружить, это выгодно!</p>
-      <p class="page-footer__text content-text">Скидка 10% для друзей из социальных сетей.</p>
+      <div class="container">
+        <div class="columns">
+          <ul class="social-list list-formatter">
+            <li class="social-list__item"><a class="vk" href="#" aria-label="Вконтакте"></a></li>
+            <li class="social-list__item"><a class="facebook" href="#" aria-label="Facebook"></a></li>
+            <li class="social-list__item"><a class="instagram" href="#" aria-label="Instagram"></a></li>
+          </ul>
+          <div class="page-footer__wrapper">
+            <p class="page-footer__slogan">Давайте дружить, это выгодно!</p>
+            <p class="page-footer__text content-text">Скидка 10% для друзей из социальных сетей.</p>
+          </div>
+        </div>
+      </div>
     </section>
   </footer>
 
