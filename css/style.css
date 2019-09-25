@@ -345,8 +345,6 @@ input::-webkit-inner-spin-button {
   opacity: 0.12;
 }
 
-
-
 .products__description {
   display: flex;
   flex-direction: column;
@@ -370,6 +368,15 @@ input::-webkit-inner-spin-button {
   text-align: center;
 }
 
+.products__item-title:hover,
+.products__item-title:focus {
+  color: #fb565a;
+}
+
+.products__item-title:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .products__text {
   display: inline-block;
   width: 230px;
@@ -387,7 +394,11 @@ input::-webkit-inner-spin-button {
   padding: 19px 62px;
 }
 
-.products__description:hover {
+.products__item:hover .products__description{
+  opacity: 1;
+}
+
+.products__item:hover::before {
   opacity: 1;
 }
 /*  Pagination */
