@@ -13,10 +13,10 @@
 
     <nav class="page-header__nav container">
       <div class="columns">
-        <a>
+        <a class="page-header__container column">
           <img class="page-header__logo" src="img/nerds-logo.svg" width="160" height="65" alt="Веб-студия Nerds">
         </a>
-        <ul class="menu list-formatter">
+        <ul class="menu list-formatter column">
           <li class="menu__item menu__item--current" area-current="page"><a href="#"><span
                 class="visually-hidden">Текущий
                 пункт:</span>Студия</a></li>
@@ -25,7 +25,7 @@
           <li class="menu__item"><a href="#">Контакты</a></li>
         </ul>
 
-        <a class="page-header__cart" href="#">Корзина</a>
+        <a class="page-header__cart column" href="#">Корзина</a>
       </div>
     </nav>
   </header>
@@ -38,54 +38,53 @@
       <div class="container">
 
         <h2 class="main-content__section-title visually-hidden">Ключевые особенности</h2>
-        <ul class="sliders list-formatter">
-          <li class="sliders__item">
-            <div class="columns">
-              <div class="column">
-                <h3 class="sliders__title visually-hidden">Дизайн</h3>
-                <p class="sliders__slogan">Долго, дорого,
-                  скрупулезно.</p>
-                <p class="sliders_text content-text">Математически выверенный дизайн<br>
-                  для вашего сайта или мобильного приложения.</p>
-                <a class="sliders__btn btn" href="#">Узнать больше</a>
-              </div>
-              <img class="sliders__img" src="img/slide1.png" width="698" height="413"
-                alt="Изображение мобильны устройств">
-            </div>
-          </li>
-          <li class="sliders__item visually-hidden">
+
+        <input class="slider__input" type="radio" name="slider" id="slider_1" checked>
+        <input class="slider__input" type="radio" name="slider" id="slider_2">
+        <input class="slider__input" type="radio" name="slider" id="slider_3">
+
+        <label class="slider__change-btn" for="slider_1" aria-label="Первый"></label>
+        <label class="slider__change-btn" for="slider_2" aria-label="Второй"></label>
+        <label class="slider__change-btn" for="slider_3" aria-label="Третий"></label>
+
+
+        <article class="sliders__item">
+          <div class="sliders__wrapper">
+            <h3 class="sliders__title visually-hidden">Дизайн</h3>
+            <p class="sliders__slogan">Долго, дорого,
+              скрупулезно.</p>
+            <p class="sliders__text content-text">Математически выверенный дизайн<br>
+              для вашего сайта или мобильного приложения.</p>
+            <a class="sliders__btn btn" href="#">Узнать больше</a>
+          </div>
+          <img src="img/slide1.png" alt="слайдер-1">
+        </article>
+
+        <article class="sliders__item">
+          <div class="sliders__wrapper">
             <h3 class="sliders__title visually-hidden">Пропорции</h3>
-            <div class="columns">
-              <div class="column">
-                <p class="sliders__slogan">Любим математику
-                  как никто другой</p>
-                <p class="sliders_text content-text">Никакого креатива, только математические формулы
-                  для расчета идеальных пропорций.</p>
-                <a class="sliders__btn btn" href="#">Узнать больше</a>
-              </div>
-              <img class="sliders__img" src="img/slide2.png" width="663" height="430" alt="Изображение компьютеров">
-            </div>
-          </li>
-          <li class="sliders__item visually-hidden">
+
+            <p class="sliders__slogan">Любим математику
+              как никто другой</p>
+            <p class="sliders__text content-text">Никакого креатива, только математические формулы
+              для расчета идеальных пропорций.</p>
+            <a class="sliders__btn btn" href="#">Узнать больше</a>
+          </div>
+          <img src="img/slide2.png" alt="слайдер-2" width="663" height="430">
+        </article>
+
+        <article class="sliders__item">
+          <div class="sliders__wrapper">
             <h3 class="sliders__title visually-hidden">Время работы</h3>
-            <div class="columns">
-              <div class="column">
-                <p class="sliders__slogan">Только ночь,
-                  только хардкор</p>
-                <p class="sliders_text content-text">Работать днем, как все? Мы против этого.
-                  Ближе к полуночи работа только начинается.</p>
-                <a class="sliders__btn btn" href="#">Узнать больше</a>
-              </div>
-              <img class="sliders__img" src="img/slide3.png" width="759" height="441"
-                alt="Изображение мобильны устройств">
-            </div>
-          </li>
-        </ul>
-        <ul class="slider-nav list-formatter">
-          <li class="slider-nav__item"><a class="slider-nav__link" href="#">1</a></li>
-          <li class="slider-nav__item"><a class="slider-nav__link" href="#">2</a></li>
-          <li class="slider-nav__item"><a class="slider-nav__link" href="#">3</a></li>
-        </ul>
+
+            <p class="sliders__slogan">Только ночь,
+              только хардкор</p>
+            <p class="sliders__text content-text">Работать днем, как все? Мы против этого.
+              Ближе к полуночи работа только начинается.</p>
+            <a class="sliders__btn btn" href="#">Узнать больше</a>
+          </div>
+          <img src="img/slide3.png" alt="слайдер-3">
+        </article>
 
     </section>
     <section class="main-content__advantages">
@@ -138,17 +137,17 @@
             <ul class="about__statistics-list list-formatter">
               <li class="about__statistic-item">
                 <p class="about__percent">146<span>%</span></p>
-                <p class="about__text content-text">Уровень
+                <p class="about__text about__text--low content-text">Уровень
                   самоотдачи</p>
               </li>
               <li class="about__statistic-item">
                 <p class="about__percent">100<span>%</span></p>
-                <p class="about__text content-text">Соблюдение
+                <p class="about__text about__text--low content-text">Соблюдение
                   сроков</p>
               </li>
               <li class="about__statistic-item">
                 <p class="about__percent">50<span>%</span></p>
-                <p class="about__text content-text">Минимальная предоплата</p>
+                <p class="about__text about__text--low  content-text">Минимальная предоплата</p>
               </li>
             </ul>
           </div>
@@ -159,22 +158,22 @@
       <h3 class="partners__title visually-hidden">Партнеры</h3>
       <div class="container">
         <ul class="partners__list list-formatter columns">
-          <li class="partners_item">
+          <li class="partners__item">
             <a class="partners__link" href="#">
-              <img class="partners__img" src="img/logo-1.png" width="190" height="68" alt="HTML Academy">
+              <img class="partners__img" src="img/logo-1.png" width="199" height="68" alt="HTML Academy">
             </a>
           </li>
-          <li class="partners_item">
+          <li class="partners__item">
             <a class="partners__link" href="#">
               <img class="partners__img" src="img/logo-2.png" width="209" height="90" alt="Barbershop Borodinski">
             </a>
           </li>
-          <li class="partners_item">
+          <li class="partners__item">
             <a class="partners__link" href="#">
               <img class="partners__img" src="img/logo-3.png" width="185" height="52" alt="Pink">
             </a>
           </li>
-          <li class="partners_item">
+          <li class="partners__item">
             <a class="partners__link" href="#">
               <img class="partners__img" src="img/logo-4.png" width="173" height="84" alt="Mishka">
             </a>
@@ -184,6 +183,7 @@
     </section>
     </section>
   </main>
+
   <footer class="page-footer">
     <section class="page-footer__contacts">
       <h2 class="visually-hidden">Контактная информация</h2>
@@ -216,7 +216,7 @@
     </section>
   </footer>
 
-  <section class="write-us">
+  <section class="write-us visually-hidden">
     <h2 class="visually-hidden">Форма обратной связи</h2>
     <form class="write-us__form" action="#" method="get">
       <fieldset>
