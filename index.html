@@ -215,32 +215,38 @@
     </section>
   </footer>
 
-  <section class="write-us visually-hidden">
+  <section class="write-us">
     <h2 class="visually-hidden">Форма обратной связи</h2>
     <form class="write-us__form" action="#" method="get">
-      <fieldset>
-        <legend class="write-us__title">Напишите нам</legend>
-        <label>
-          <span class="write-us__label">Ваше имя:<span class="visually-hidden">(Обязательно)</span></span>
-          <input class="write-us__input" type="text" name="name" placeholder="Имя Фамилия" aria-required="true"
-            aria-live="polite" required>
-        </label>
-        <label>
-          <span class="write-us__label">Ваш e-mail:<span class="visually-hidden">(Обязательно)</span></span>
-          <input class="write-us__input" type="email" name="email" placeholder="email@example.com"
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" aria-required="true" required>
-        </label>
+      <div class="container">
+        <fieldset>
+          <legend class="write-us__title">Напишите нам</legend>
 
-        <label>
-          <span class="write-us__label">Текст письма:<span class="visually-hidden">(Обязательно)</span></span>
-          <textarea class="write-us__textarea" name="message" cols="30" rows="10" placeholder="В свободной форме"
-            aria-required="true" required></textarea>
-        </label>
-      </fieldset>
-      <button class="write-us__btn btn" type="submit">Отправить</button>
+          <div class="columns">
+            <label class="column">
+              <span class="write-us__label">Ваше имя:<span class="visually-hidden">(Обязательно)</span></span>
+              <input class="write-us__input" type="text" name="name" placeholder="Имя Фамилия" aria-required="true"
+                aria-live="polite">
+            </label>
+            <label class="column">
+              <span class="write-us__label">Ваш e-mail:<span class="visually-hidden">(Обязательно)</span></span>
+              <input class="write-us__input" type="email" name="email" placeholder="email@example.com"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" aria-required="true">
+            </label>
+          </div>
+
+          <label>
+            <span class="write-us__label">Текст письма:<span class="visually-hidden">(Обязательно)</span></span>
+            <textarea class="write-us__textarea" name="message" cols="30" rows="10" placeholder="В свободной форме"
+              aria-required="true"></textarea>
+          </label>
+        </fieldset>
+        <button class="write-us__btn btn" type="submit">Отправить</button>
+      </div>
     </form>
-    <button class="close__btn" type="button" aria-label="Закрыть">X</button>
+    <a class="close__btn" aria-label="Закрыть"></a>
   </section>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
