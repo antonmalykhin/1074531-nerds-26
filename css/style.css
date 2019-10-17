@@ -753,6 +753,7 @@ a {
   border: 8px solid white;
   border-radius: 50%;
   box-shadow: 0 2px 0 0 #cccccc;
+  cursor: pointer;
 }
 
 .handler--left {
@@ -776,6 +777,7 @@ a {
 
 .form__item-title {
   position: relative;
+
   margin-right: 12px;
 
   font-weight: 400;
@@ -820,39 +822,45 @@ input::-webkit-inner-spin-button {
 
 .form__list--grids .form__item-title::before {
   content: "";
-  width: 17px;
-  height: 17px;
-  display: block;
   position: absolute;
   top: -4px;
   left: -36px;
-  border-radius: 50%;
+
+  display: block;
+  width: 17px;
+  height: 17px;
+
   border: 4px solid #b8b8b8;
+  border-radius: 50%;
   opacity: 0.4;
 }
 
 .form__fieldset--features .form__item-title::before {
   content: "";
-  width: 23px;
-  height: 23px;
-  display: block;
   position: absolute;
   top: -3px;
   left: -36px;
+
+  display: block;
+  width: 23px;
+  height: 23px;
+
   background-image: url("../img/checkbox-off.svg");
   opacity: 0.4;
 }
 
 .form__list--grids .form__item-title::after {
   content: "";
-  width: 9px;
-  height: 9px;
-  display: block;
   position: absolute;
   top: 4px;
   left: -28px;
-  border-radius: 50%;
+
+  display: block;
+  width: 9px;
+  height: 9px;
+
   background-color: #b8b8b8;
+  border-radius: 50%;
   opacity: 0;
 }
 
@@ -862,6 +870,7 @@ input::-webkit-inner-spin-button {
 
 .form__fieldset--features .form__field:checked ~ .form__item-title::before {
   width: 26px;
+
   background-image: url("../img/checkbox-on.svg");
 }
 
@@ -918,8 +927,8 @@ input::-webkit-inner-spin-button {
 
 .sorting__title {
   margin: 0;
-  padding: 0;
   margin-right: auto;
+  padding: 0;
 
   font-weight: 700;
   font-size: 18px;
@@ -950,6 +959,7 @@ input::-webkit-inner-spin-button {
   font-family: "Roboto";
   color: #000000;
   text-transform: uppercase;
+
   opacity: 0.3;
 }
 
@@ -972,18 +982,19 @@ input::-webkit-inner-spin-button {
 }
 
 .sorting__list-direction {
-  align-items: center;
   justify-content: flex-end;
+  align-items: center;
   width: 60px;
   margin-left: 27px;
 }
 
 .sorting__link--direction {
-  margin-left: 10px;
   position: relative;
+
   display: block;
   width: 17px;
   height: 17px;
+  margin-left: 10px;
 }
 
 .sorting .form__title {
@@ -993,25 +1004,26 @@ input::-webkit-inner-spin-button {
 .sorting__link--direction::after {
   content: "";
   position: absolute;
+  top: 3px;
 
   width: 11px;
   height: 11px;
-
-  top: 3px;
 
   background-repeat: no-repeat;
 }
 
 .sorting__item:first-child .sorting__link--direction::after {
-  transform: rotateZ(180deg);
-  background-image: url("../img/icon-down-dir.svg");
-  left: 3px;
   top: 3px;
+  left: 3px;
+
+  background-image: url("../img/icon-down-dir.svg");
+  transform: rotateZ(180deg);
 }
 
 .sorting__item:last-child .sorting__link--direction::after {
-  background-image: url("../img/icon-up-dir.svg");
   left: 5px;
+
+  background-image: url("../img/icon-up-dir.svg");
 }
 
 .products__list {
@@ -1026,8 +1038,8 @@ input::-webkit-inner-spin-button {
 
   width: 360px;
   height: 576px;
-  padding-top: 40px;
   margin-bottom: 33px;
+  padding-top: 40px;
 }
 
 .products__image-wrapper {
@@ -1036,11 +1048,11 @@ input::-webkit-inner-spin-button {
 
 .products__image-wrapper::before {
   content: "";
-  display: block;
   position: absolute;
   top: -41px;
   left: 0;
 
+  display: block;
   width: 362px;
   height: 42px;
 
@@ -1057,7 +1069,7 @@ input::-webkit-inner-spin-button {
 
 .products__description {
   position: absolute;
-  top: 385px;
+  bottom: 0;
 
   display: flex;
   flex-direction: column;
@@ -1066,6 +1078,7 @@ input::-webkit-inner-spin-button {
   box-sizing: border-box;
   width: 361px;
   height: 231px;
+  overflow: hidden;
 
   background-color: #e9e9e9;
   opacity: 0;
@@ -1109,7 +1122,7 @@ input::-webkit-inner-spin-button {
 }
 
 .products__item:hover {
-  box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
+  box-shadow: 0 6px 15px rgba(0, 1, 1, 0.25);
 }
 
 .products__item:hover .products__description {
@@ -1138,9 +1151,10 @@ input::-webkit-inner-spin-button {
 .pagination__btn {
   display: block;
   box-sizing: border-box;
-  color: #000000;
   width: 50px;
   height: 50px;
+
+  color: #000000;
 
   background-color: #eeeeee;
 }
@@ -1170,15 +1184,17 @@ input::-webkit-inner-spin-button {
 .current:hover,
 .current:focus,
 .current:active {
+  color: #000000;
+
   background-color: #ffffff;
   box-shadow: inset 0 0 0 3px #dbdbdb;
-  color: #000000;
 }
 
 .pagination__btn--big {
   width: 260px;
-  text-align: center;
   padding-top: 18px;
+
+  text-align: center;
 }
 
 .pagination__btn--back {
@@ -1344,17 +1360,18 @@ input::-webkit-inner-spin-button {
 /* Write-us */
 
 .write-us {
-  display: none;
-  box-sizing: border-box;
   position: fixed;
-  width: 960px;
-
   top: 220px;
   left: 473px;
-  background-color: #ffffff;
-  box-shadow: 0px 20px 40px rgba(0, 1, 1, 0.75);
   z-index: 30;
+
+  display: none;
+  box-sizing: border-box;
+  width: 960px;
   padding-top: 67px;
+
+  background-color: #ffffff;
+  box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
 }
 
 .write-us .container {
@@ -1377,26 +1394,29 @@ input::-webkit-inner-spin-button {
 }
 
 .write-us fieldset {
-  border: none;
   margin: 0;
   padding: 0;
+
+  border: none;
 }
 
 .write-us__title {
+  margin-bottom: 41px;
+
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
   color: #000000;
-  margin-bottom: 41px;
 }
 
 .write-us__label {
   display: block;
+  margin-bottom: 9px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
   color: #000000;
-  margin-bottom: 9px;
 }
 
 .write-us__input {
@@ -1420,33 +1440,35 @@ input::-webkit-inner-spin-button {
 .write-us__textarea {
   width: 730px;
   height: 90px;
+  margin-bottom: 40px;
   padding: 12px 13px;
 
   background-color: #ffffff;
   border: 2px solid #d7dcde;
   border-radius: 3px;
-  margin-bottom: 40px;
 
   resize: none;
 }
 
 .write-us__btn {
-  padding: 16px 84px;
   margin-bottom: 60px;
+  padding: 16px 84px;
+
   border: none;
 }
 
 .close__btn {
   position: absolute;
-  display: block;
-  width: 21px;
-  height: 21px;
-  border: none;
   /* background-color: transparent; */
   top: 78px;
   right: 90px;
 
+  display: block;
+  width: 21px;
+  height: 21px;
+
   background-image: url("../img/close-cross.svg");
+  border: none;
   opacity: 0.3;
 }
 
@@ -1461,6 +1483,7 @@ input::-webkit-inner-spin-button {
 
 .modal-show {
   display: block;
+
   animation: open 0.5s;
 }
 
